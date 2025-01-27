@@ -1,0 +1,24 @@
+CREATE TABLE RegistrosContables_AORRALA (
+    Id SERIAL PRIMARY KEY,  -- Clave primaria con incremento automático
+    Fecha VARCHAR(30),  -- Columna de fecha
+    Descripcion VARCHAR(30),  -- Columna de descripción
+    Monto DECIMAL  -- Columna de monto
+);
+
+-- Tabla MovimientosBancarios_AORRALA
+CREATE TABLE MovimientosBancarios_AORRALA (
+    Id SERIAL PRIMARY KEY,  -- Clave primaria con incremento automático
+    Fecha VARCHAR(30),  -- Columna de fecha
+    Descripcion VARCHAR(30),  -- Columna de descripción
+    Monto DECIMAL  -- Columna de monto
+);
+
+-- Tabla Discrepancias_AORRALA
+CREATE TABLE Discrepancias_AORRALA (
+    Id SERIAL PRIMARY KEY,  -- Clave primaria con incremento automático
+    Fecha VARCHAR(30),  -- Columna de fecha
+    Descripcion VARCHAR(30),  -- Columna de descripción
+    Monto DECIMAL,  -- Columna de monto
+    Tipo VARCHAR(30),  -- Tipo de discrepancia
+    Resuelta BOOLEAN  -- Indica si la discrepancia ha sido resuelta
+);
